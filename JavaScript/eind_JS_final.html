@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <!-- <script src="../js/navbar.js"></script> -->
+    <!-- <script src="eind_JS_final.js"></script> -->
+
+    <title>Eindopdracht final JS</title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <main>
+      <div class="text">
+    <h1>Eindopdracht JavaScript</h1>
+    <br>
+    <p>
+      Als eindopdracht kreeg ik de taak om een calculator te maken met JavaScript. Je moest zoveel
+      mogelijk je geleerde skills toepassen zonder een hele tutorial na te maken. Veel van mijn
+      studenten gingen peer to peer coden. Maar ik had besloten om als eerst zelf te proberen.
+      <br><br>
+      Na drie dagen struggelen kreeg ik plots een Aha moment waardoor het coderen plots vlekkenloos
+      liep. Soms kwam ik vast maar door aanwijzingen van mijn medestudenten kon ik mijn eindopdracht maken.
+    </p>
+  </div>
+    <br>
+    <content>
+    <div class="calcboven" id="output" maxlength="10"></div>
+    <div class="calconder">
+      <div>
+        <button class="btn btngrey" id="ac" onclick="reply_clear()">AC</button>
+        <button class="btn btngrey" id="+/-" onclick="reply_posneg()">+/-</button>
+        <button class="btn btngrey" id="%" onclick="reply_click(this.id)">%</button>
+        <button class="btn btnyellow" id="/" onclick="reply_click(this.id)">/</button>
+      </div>
+      <div>
+        <button class="btn btndgrey" id="7" onclick="reply_click(this.id)">7</button>
+        <button class="btn btndgrey" id="8" onclick="reply_click(this.id)">8</button>
+        <button class="btn btndgrey" id="9" onclick="reply_click(this.id)">9</button>
+        <button class="btn btnyellow" id="*" onclick="reply_click(this.id)">*</button>
+        <!-- <input type="button" class="btn btnyellow" value="*" onclick="myFunction()" /> -->
+      </div>
+      <div>
+        <button class="btn btndgrey" id="4" onclick="reply_click(this.id)">4</button>
+        <button class="btn btndgrey" id="5" onclick="reply_click(this.id)">5</button>
+        <button class="btn btndgrey" id="6" onclick="reply_click(this.id)">6</button>
+        <button class="btn btnyellow" id="-" onclick="reply_click(this.id)">-</button>
+      </div>
+      <div>
+        <button class="btn btndgrey" id="1" onclick="reply_click(this.id)">1</button>
+        <button class="btn btndgrey" id="2" onclick="reply_click(this.id)">2</button>
+        <button class="btn btndgrey" id="3" onclick="reply_click(this.id)">3</button>
+        <button class="btn btnyellow" id="+" onclick="reply_click(this.id)">+</button>
+      </div>
+      <div>
+        <button class="btn btnlong btndgrey" id="0" onclick="reply_click(this.id)">0</button>
+        <button class="btn btndgrey" id="." onclick="reply_click(this.id)">.</button>
+        <button class="btn btnyellow" id="=" onclick="reply_totaal()">=</button>
+      </div>
+    </div>
+  </content>
+  </main>
+  <script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+   let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        console.log(i)
+      }
+ 
+    }
+  }
+}
+  </script>
+  </body>
+</html>
