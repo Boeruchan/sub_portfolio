@@ -81,40 +81,41 @@ main .btndgrey {
   background-color: #757575;
 }
 
-.dropbtn {
-  background-color: #3498db;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+.toplevel {
+  display: block;
+  padding: 0 10px;
+  line-height: 2;
+  color: #fff;
+  text-decoration: none;
+  background: #f00;
 }
 
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: #2980b9;
-}
-
+/* Dropdowns */
 .dropdown {
   position: relative;
-  display: inline-block;
+  z-index: 200;
 }
 
-.dropdown-content {
-  display: none;
+.submenu {
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 200px;
+  list-style-type: none;
+  padding-top: 2em;
+  z-index: 200;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+hover .submenu {
   display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  background: navy;
 }
 /*# sourceMappingURL=style.css.map */
