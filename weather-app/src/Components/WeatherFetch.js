@@ -36,6 +36,9 @@ if (posts === ""){
                     <td>{Math.floor(posts.main.humidity)}</td>
                 </tr>
             </table>
+            <div class="click">
+            <p>Click me</p>
+            </div>
         </div>
     )
 }

@@ -10,14 +10,6 @@
     <title>Eindopdracht final JS</title>
   </head>
   <body>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
     <main>
       <div class="text">
     <h1>Eindopdracht JavaScript</h1>
@@ -29,7 +21,9 @@
       <br><br>
       Na drie dagen struggelen kreeg ik plots een Aha moment waardoor het coderen plots vlekkenloos
       liep. Soms kwam ik vast maar door aanwijzingen van mijn medestudenten kon ik mijn eindopdracht maken.
+      <br><br><a href="https://chingmfw.netlify.app/portfolio.html">Back to portfolio</a>
     </p>
+   
   </div>
     <br>
     <content>
@@ -66,29 +60,10 @@
         <button class="btn btnyellow" id="=" onclick="reply_totaal()">=</button>
       </div>
     </div>
+  
   </content>
+  
   </main>
-  <script>
-    function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-   let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-        console.log(i)
-      }
- 
-    }
-  }
-}
-  </script>
   </body>
 </html>

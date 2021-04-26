@@ -9,7 +9,7 @@
 .App {
   width: 100%;
   min-height: 100vh;
-  padding: 5%;
+  /* padding: 5%; */
   background: rgb(63, 94, 251);
   background: radial-gradient(
     circle,
@@ -51,7 +51,7 @@ h1 {
   display: flex;
   margin: 5px 15px 8px 15px;
 }
-.card img{
+.card img {
   width: 80%;
   height: auto;
   margin-top: -30px;
@@ -60,7 +60,7 @@ h1 {
   margin-top: -50px;
   font-size: 30px;
 }
-.card h1{
+.card h1 {
   padding-top: 40px;
 }
 table.cardtext {
@@ -69,12 +69,8 @@ table.cardtext {
   margin-bottom: 25px;
 }
 
-
 .button_card {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(121, 102, 102, 0.3));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(121, 102, 102, 0.3));
   border-radius: 15px;
   z-index: 2;
   padding: 0;
@@ -114,14 +110,10 @@ h3 img {
 .accordion {
   width: 100%;
   margin: -10px 20px;
-  background:
-  rgba(149, 223, 216, 0.418);
+  background: rgba(149, 223, 216, 0.418);
 }
 .accordionHeading {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(121, 102, 102, 0.3));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(121, 102, 102, 0.3));
   padding: 0px 0px 10px 0px;
   margin: -2px;
 }
@@ -164,4 +156,10 @@ th {
 
 a {
   margin-top: 50px;
+}
+
+.click p {
+  font-size: 0.8rem;
+  margin-top: -25%;
+  color: rgb(85, 85, 85);
 }
