@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-size: 20rem;
+    margin-left: 2%;
+}
+p {
+    padding: 50rem;
+}
+#artbox1{
+    background-image: url(./img/caterpillar.jpg);
+}
+#artbox2{
+    background-image: url(./img/strawberrycow.jpg);
+}
+#artbox3{
+    background-image: url(./img/whale.jpg);
+}
+#artbox4{
+    background-image: url(./img/jack.jpg);
+}
+#artbox5{
+    background-image: url(./img/cheshirecat.jpg);
+}
+#artbox6{
+    background-image: url(./img/blueday.jpg);
+}
+#artbox7{
+    background-image: url(./img/jack.jpg);
+}
+#artbox7{
+    background-image: url(./img/whalestamp.gif);
+}
+#artbox1, #artbox2, #artbox3, #artbox4, #artbox5, #artbox6{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#artbox7{
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#artbox8{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+a{
+    font-size: 2rem;
+    padding: 200px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
